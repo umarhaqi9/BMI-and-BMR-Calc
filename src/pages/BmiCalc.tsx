@@ -1,8 +1,5 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonButtons, IonBackButton ,IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonRouterOutlet, IonRow, IonTitle, IonToolbar, setupIonicReact, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonAlert, IonToggle } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import { IonApp, IonButtons, IonBackButton , IonCol, IonContent, IonGrid, IonHeader,  IonInput, IonItem, IonLabel,  IonRow, IonTitle, IonToolbar, setupIonicReact, IonAlert} from '@ionic/react';
 
-import { calculatorOutline, moon, refreshOutline} from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -27,7 +24,6 @@ import {useRef, useState} from "react";
 import BmiControls from '../components/BmiControls';
 import InputControl from '../components/InputControl';
 import BmiResult from '../components/BmiResult';
-import DarkModeToggle from '../components/DarkModeToggle';
 
 
 setupIonicReact();

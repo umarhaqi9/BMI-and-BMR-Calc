@@ -1,4 +1,4 @@
-import { IonCol, IonIcon, IonItem, IonLabel, IonRow, IonToggle } from '@ionic/react';
+import {  IonIcon, IonToggle } from '@ionic/react';
 import { moon } from 'ionicons/icons';
 import '../pages/Home.css';
 

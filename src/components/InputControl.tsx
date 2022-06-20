@@ -1,5 +1,4 @@
-import { IonButton, IonCol, IonIcon, IonLabel, IonRow, IonSegment, IonSegmentButton } from "@ionic/react";
-import { calculatorOutline, refreshOutline } from "ionicons/icons";
+import {  IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
 import React from "react";
 
 const InputControl: React.FC<{

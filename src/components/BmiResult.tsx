@@ -1,5 +1,4 @@
-import { IonButton, IonCol, IonIcon, IonRow, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle } from "@ionic/react";
-import { calculatorOutline, refreshOutline } from "ionicons/icons";
+import {  IonCol,  IonRow, IonCard, IonCardHeader } from "@ionic/react";
 import React from "react";
 import './BmiResult.css';
 

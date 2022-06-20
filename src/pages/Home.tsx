@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonCardContent, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonLabel, IonPage, IonRow, IonText, IonTitle, IonToggle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonPage, IonRow,  IonTitle,  IonToolbar } from '@ionic/react';
 import './Home.css';
 import React from "react";
 import DarkModeToggle from '../components/DarkModeToggle';
