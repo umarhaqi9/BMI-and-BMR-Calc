@@ -101,7 +101,7 @@ const BmrCalc: React.FC = () => {
         ]}></IonAlert>
       <IonApp>
         <IonHeader>
-          <IonToolbar>
+          <IonToolbar color='primary'>
             <IonButtons slot="start">
                 <IonBackButton defaultHref="/home" />
             </IonButtons>
@@ -109,7 +109,7 @@ const BmrCalc: React.FC = () => {
             {/* <DarkModeToggle/> */}
           </IonToolbar>
         </IonHeader>
-        <IonContent className='ion-padding'>
+        <IonContent color='secondary' className='ion-padding'>
           <IonGrid>
             <IonRow>
               <IonCol size-sm='8' offset-sm='2' size-md='6' offset-md='3'>
@@ -121,27 +121,27 @@ const BmrCalc: React.FC = () => {
                   </IonRow>
                   <IonRow>
                       <IonCol>
-                          <IonItem>
-                              <IonLabel position='floating'>Age</IonLabel>
+                          <IonItem color='tertiary'>
+                              <IonLabel  position='floating'>Age</IonLabel>
                               <IonInput ref={ageInputRef}></IonInput>
                           </IonItem>
                       </IonCol>
                   </IonRow>
                   <IonRow>
                       <IonCol>
-                          <IonItem>
+                          <IonItem color='tertiary'>
                               
-                              <IonRadioGroup value={gender} onIonChange={e => setGender(e.detail.value)}>
+                              <IonRadioGroup  value={gender} onIonChange={e => setGender(e.detail.value)}>
                                   <IonListHeader>
                                       <IonLabel>Gender</IonLabel>
                                   </IonListHeader>
-                                  <IonItem>
+                                  <IonItem color='tertiary'>
                                       <IonLabel>Male</IonLabel>
-                                      <IonRadio slot='start' value="male"/>
+                                      <IonRadio  slot='start' value="male"/>
                                   </IonItem>
-                                  <IonItem>
+                                  <IonItem color='tertiary'>
                                       <IonLabel>Female</IonLabel>
-                                      <IonRadio slot='start' value="female"/>
+                                      <IonRadio  slot='start' value="female"/>
                                   </IonItem>
                               </IonRadioGroup>
                           </IonItem>
@@ -150,8 +150,8 @@ const BmrCalc: React.FC = () => {
 
                   <IonRow>
                     <IonCol>
-                      <IonItem>
-                        <IonLabel position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
+                      <IonItem color='tertiary'>
+                        <IonLabel  position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
                         <IonInput ref={heightInputRef}></IonInput>
                       </IonItem>
                     </IonCol>
@@ -159,8 +159,8 @@ const BmrCalc: React.FC = () => {
                   
                   <IonRow>
                     <IonCol>
-                      <IonItem>
-                        <IonLabel position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
+                      <IonItem color='tertiary'>
+                        <IonLabel  position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
                         <IonInput ref={weightInputRef}></IonInput>
                       </IonItem>
                     </IonCol>

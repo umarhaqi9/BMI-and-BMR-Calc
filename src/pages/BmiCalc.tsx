@@ -100,7 +100,7 @@ const BmiCalc: React.FC = () => {
         ]}></IonAlert>
       <IonApp>
         <IonHeader>
-          <IonToolbar>
+          <IonToolbar color='primary'>
             <IonButtons slot="start">
                 <IonBackButton defaultHref="/home" />
             </IonButtons>
@@ -108,7 +108,7 @@ const BmiCalc: React.FC = () => {
             {/* <DarkModeToggle/> */}
           </IonToolbar>
         </IonHeader>
-        <IonContent className='ion-padding'>
+        <IonContent color='secondary' className='ion-padding'>
           <IonGrid>
             <IonRow>
               <IonCol size-sm='8' offset-sm='2' size-md='6' offset-md='3'>
@@ -121,8 +121,8 @@ const BmiCalc: React.FC = () => {
                   <IonRow>
                     
                     <IonCol>
-                      <IonItem>
-                        <IonLabel position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
+                      <IonItem color='tertiary'>
+                        <IonLabel  position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
                         <IonInput ref={heightInputRef}></IonInput>
                       </IonItem>
                     </IonCol>
@@ -130,8 +130,8 @@ const BmiCalc: React.FC = () => {
                   
                   <IonRow>
                     <IonCol>
-                      <IonItem>
-                        <IonLabel position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
+                      <IonItem color='tertiary'>
+                        <IonLabel  position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
                         <IonInput ref={weightInputRef}></IonInput>
                       </IonItem>
                     </IonCol>

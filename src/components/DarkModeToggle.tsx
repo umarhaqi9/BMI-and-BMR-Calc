@@ -16,6 +16,7 @@ const DarkModeToggle: React.FC<{}> = () => {
             <IonToggle
                 slot="end"
                 name="darkMode"
+                color='secondary'
                 onIonChange={toggleDarkModeHandler}
             />
         </>

@@ -7,22 +7,22 @@ const Home: React.FC = () => {
   
 
   return (
-    <IonPage>
+    <IonPage >
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color='primary'>
           <IonTitle>Calculator</IonTitle>
           <DarkModeToggle/>
         </IonToolbar>
       </IonHeader>
-      <IonContent className='ion-padding'>
+      <IonContent color='secondary' className='ion-padding'>
         <h2 className='ion-text-center'>Pick your calculator</h2>
         <IonGrid>
           <IonRow>
             <IonCol>
-              <IonButton className='nav-button' size='large' expand='block' routerLink='/bmi'>BMI Calculator</IonButton>
+              <IonButton strong color='primary' className='nav-button' size='large' expand='block' routerLink='/bmi'>BMI Calculator</IonButton>
             </IonCol>
             <IonCol>
-              <IonButton className='nav-button' size='large' expand='block' routerLink='/bmr'>BMR Calculator</IonButton>
+              <IonButton strong color='primary' className='nav-button' size='large' expand='block' routerLink='/bmr'>BMR Calculator</IonButton>
             </IonCol>
           </IonRow>
           
