@@ -18,3 +18,6 @@
     background: var(--ion-color-step-850, #27323e);
     color: var(--ion-item-background, #fff);
   }
+  .logo{
+    margin-left: 1rem;
+  }

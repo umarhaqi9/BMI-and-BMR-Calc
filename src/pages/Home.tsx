@@ -2,6 +2,7 @@ import { IonButton, IonCard, IonCardContent, IonCol, IonContent, IonGrid, IonHea
 import './Home.css';
 import React from "react";
 import DarkModeToggle from '../components/DarkModeToggle';
+import { calculator } from 'ionicons/icons';
 
 const Home: React.FC = () => {
   
@@ -10,7 +11,8 @@ const Home: React.FC = () => {
     <IonPage >
       <IonHeader>
         <IonToolbar color='primary'>
-          <IonTitle>Calculator</IonTitle>
+          <IonIcon size='large' className='logo' icon={calculator} slot='start'/>
+          <IonTitle>BMCalculator</IonTitle>
           <DarkModeToggle/>
         </IonToolbar>
       </IonHeader>
