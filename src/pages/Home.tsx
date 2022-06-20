@@ -1,4 +1,4 @@
-import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonPage, IonRow,  IonTitle,  IonToolbar } from '@ionic/react';
+import { IonButton, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRow,  IonText,  IonTitle,  IonToolbar } from '@ionic/react';
 import './Home.css';
 import React from "react";
 import DarkModeToggle from '../components/DarkModeToggle';
@@ -27,10 +27,13 @@ const Home: React.FC = () => {
               <IonButton strong color='primary' className='nav-button' size='large' expand='block' routerLink='/bmr'>BMR Calculator</IonButton>
             </IonCol>
           </IonRow>
-          
-
         </IonGrid>
       </IonContent>
+      <IonFooter>
+        <IonToolbar color='primary' className='ion-text-center'>
+          <IonText >Copyright © 2022 Umar Haqi</IonText>
+        </IonToolbar>
+      </IonFooter>
     </IonPage>
   );
 };
